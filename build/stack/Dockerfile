@@ -84,6 +84,6 @@ RUN wget -qO- "http://archive.apache.org/dist/tomcat/tomcat-8/v8.0.24/bin/apache
     sudo chmod -R g+w /home/user        
 
 COPY ["entrypoint.sh","/home/user/entrypoint.sh"]
-
+RUN sudo chmod 777 /home/user/entrypoint.sh
 ENTRYPOINT ["/home/user/entrypoint.sh"]
 CMD tail -f /dev/null
