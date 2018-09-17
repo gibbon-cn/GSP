@@ -1,0 +1,36 @@
+﻿
+{
+    "AppSettings":
+    {
+        "ServerUrls.IPv4": "http://0.0.0.0:5000", //支持多个，逗号分隔，可以通过启动时加ipv4只启用ipv4
+        "ServerUrls.IPv6": "http://[::]:5000", //支持多个，逗号分隔，可以通过启动时加ipv6只启用ipv6
+		"Environment": "Dev", //Dev-开发环境,Prod-生产环境,Stage-测试环境
+		"ConfigCenterUrl":"http://inspur.cfgcenter.com"
+    },
+    "MasterDB":
+    {
+        "DbType": "PgSQL",
+        "UserId": "netcore",
+        "Password": "aaaaaa",
+        "Source": "10.24.19.124:15432",
+        "Catalog": "netcore",
+        "Provider": "1",
+        "ConnectTimeout": "120",
+        "CommandTimeout": "600"
+     },
+	 "DebugSetting":
+	 {
+		"InspurIdInfo":
+		{
+			"ClientSecret" :"f29152b9-8852-493e-8bd5-f247c363db11",
+			"ClientId": "6211ccfd-973d-45e6-bec6-89e8303a554c"
+		},
+		"IsDebug":false,
+		"UserInfo":
+		{
+			"UserID" :"",
+			"TenantID": "",
+			"Language": "zh-CHS"
+		}
+	 }
+}

@@ -1,0 +1,32 @@
+{
+  "GSPDbConfiguration": {
+    "DefaultConnection": "pg01",
+    "Connections": [
+      {
+        "DbType": "SQLServer",
+        "Code": "MS02",
+        "UserId": "lcm2049999",
+        "Password": "Test6530",
+        "Source": "10.24.18.61",
+        "Catalog": "CWBASEM204",
+        "ConnectTimeout": "120",
+        "CommandTimeout": "600",
+        "MaxPoolSize": "100",
+        "Description": "ÊµÀý1"
+      },
+      {
+        "DbType": "PgSQL",
+        "Code": "pg01",
+        "UserId": "netcore",
+        "Password": "aaaaaa",
+        "Source": "10.24.19.124:15432",
+        "Catalog": "netcore",
+        "Provider": "1",
+        "ConnectTimeout": "120",
+        "CommandTimeout": "600",
+        "MaxPoolSize": "100",
+        "Description": "ÊµÀý2"
+      }
+    ]
+  }
+}

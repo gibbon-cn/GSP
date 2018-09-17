@@ -1,0 +1,24 @@
+{
+  "Services": [
+    {
+      "Interface": "Inspur.Ecp.Caf.Context.ICafSessionFactory,Inspur.Ecp.Caf.Context",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.Context.HttpCafSessionFactory,Inspur.Ecp.Caf.Context"
+    },
+    {
+      "Interface": "Inspur.Ecp.Caf.Context.ITokenSecurity,Inspur.Ecp.Caf.Context",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.Context.TokenSecurity,Inspur.Ecp.Caf.Context"
+    },
+    {
+      "Interface": "Inspur.Ecp.Caf.Context.ICafSessionAccessor,Inspur.Ecp.Caf.Context",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.Context.HttpCafSessionAccessor,Inspur.Ecp.Caf.Context"
+    },
+	{
+      "Interface": "Inspur.Ecp.Caf.Context.ISessionPublicService,Inspur.Ecp.Caf.Context",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.Context.CafSessionServices,Inspur.Ecp.Caf.Context"
+    }
+  ]
+}

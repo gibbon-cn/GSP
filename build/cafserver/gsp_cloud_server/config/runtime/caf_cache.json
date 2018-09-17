@@ -1,0 +1,136 @@
+{
+	"CachingConfiguration" :
+	{
+	  "MemoryCacheManagers": [
+		{
+		  "Name": "Metadata",
+		  "CacheType": "Local",
+		  "ExpirationScanFrequency":"00:10:00",
+		  "SizeLimit":"2048",
+		  "CompactionPercentage":"15"
+		},
+		{
+		  "Name": "GspFunc",
+		  "CacheType": "Local",
+		  "ExpirationScanFrequency":"00:05:00",
+		  "SizeLimit":"512",
+		  "CompactionPercentage":"20"
+		},
+		{
+		  "Name": "Context",
+		  "CacheType": "Distributed",
+		  "ExpirationScanFrequency":"00:05:00",
+		  "SizeLimit":"512",
+		  "CompactionPercentage":"20"
+		},
+                {
+		  "Name": "MedataPackageInfo",
+		  "CacheType": "Local",
+		  "ExpirationScanFrequency":"00:10:00",
+		  "SizeLimit":"2048",
+		  "CompactionPercentage":"0.15"
+		},
+		{
+		  "Name": "MedataPackageDependence",
+		  "CacheType": "Local",
+		  "ExpirationScanFrequency":"00:10:00",
+		  "SizeLimit":"2048",
+		  "CompactionPercentage":"0.15"
+		},
+		{
+		  "Name": "MetadataManifestInfo",
+		  "CacheType": "Distributed",
+		  "ExpirationScanFrequency":"00:10:00",
+		  "SizeLimit":"2048",
+		  "CompactionPercentage":"0.15"
+		},
+		{
+		  "Name": "MetadataInfo",
+		  "CacheType": "Distributed",
+		  "ExpirationScanFrequency":"00:10:00",
+		  "SizeLimit":"2048",
+		  "CompactionPercentage":"0.15"
+		},
+		{
+		  "Name": "MetadataDependence",
+		  "CacheType": "Distributed",
+		  "ExpirationScanFrequency":"00:10:00",
+		  "SizeLimit":"2048",
+		  "CompactionPercentage":"0.15"
+		},
+		{
+			"Name": "Luw",
+			"CacheType": "Local",
+			"ExpirationScanFrequency": "00:10:00",
+			"SizeLimit": "2048",
+			"CompactionPercentage": "0.15"
+		},
+		{
+			"Name": "SqlMapper",
+			"CacheType": "Local",
+			"ExpirationScanFrequency": "00:10:00",
+			"SizeLimit": "2048",
+			"CompactionPercentage": "0.15"
+		}
+	  ],
+	  "DistributedCacheManagers": [
+		{
+		  "Name": "Bef",
+		  "CacheType": "Distributed",
+		  "Configuration":"127.0.0.1:6379",
+		  "InstanceName":"BefCacheServer"
+		},
+		{
+		  "Name": "Context",
+		  "CacheType": "Distributed",
+		  "Configuration":"127.0.0.1:6379",
+		  "InstanceName":"ContextServer"
+		},
+		{
+		  "Name": "SessionRelationManager",
+		  "CacheType": "Distributed",
+		  "Configuration":"127.0.0.1:6379",
+		  "InstanceName":"SessionRelationManager"
+		},
+		{
+		  "Name": "Multitenancy",
+		  "CacheType": "Distributed",
+		  "Configuration":"127.0.0.1:6379",
+		  "InstanceName":"MultitenancyServer"
+		},
+		{
+		  "Name": "authorization",
+		  "CacheType": "Distributed",
+		  "Configuration":"127.0.0.1:6379",
+		  "InstanceName":"MultitenancyServer"
+		},
+	        {
+                  "Name": "DistributedLock",
+                  "CacheType": "Distributed",
+                  "Configuration": "127.0.0.1:6379",
+                  "InstanceName": "DistributedLock"
+                 }
+		,
+        {
+        "Name": "EDF",
+        "CacheType": "Distributed",
+        "Configuration": "127.0.0.1:6379",
+        "InstanceName": "EDF"
+        }
+		,
+        {
+        "Name": "TCC",
+        "CacheType": "Distributed",
+        "Configuration": "127.0.0.1:6379",
+        "InstanceName": "TCC"
+        }
+        ,
+        {
+        "Name": "ValueMapping",
+        "CacheType": "Distributed",
+        "Configuration": "127.0.0.1:6379",
+        "InstanceName": "ValueMapping"
+        }
+	  ]
+	}
+}

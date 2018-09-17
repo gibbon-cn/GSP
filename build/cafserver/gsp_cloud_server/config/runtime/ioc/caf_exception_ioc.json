@@ -1,0 +1,14 @@
+{
+  "Services": [
+    {
+      "Interface": "Inspur.Ecp.Caf.Error.Service.IExceptionHandler,Inspur.Ecp.Caf.Exception",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.ExceptionHandle.DefaultExceptionHandler,Inspur.Ecp.Caf.ExceptionHandle"
+    },
+	{
+      "Interface": "Inspur.Ecp.Caf.ExceptionApi.Core.IExcepetionMessageService,Inspur.Ecp.Caf.Exception",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.ExceptionHandle.ExceptionMessageService,Inspur.Ecp.Caf.ExceptionHandle"
+    }
+  ]
+}

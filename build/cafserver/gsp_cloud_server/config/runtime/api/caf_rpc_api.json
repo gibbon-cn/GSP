@@ -1,0 +1,28 @@
+﻿/*
+  配置文件的路径
+  Glbal
+    -WebApi
+      -GSP
+        -CafWebApi.json
+        -SysWebApi.json
+        -....
+      -BI
+      -FI
+*/
+{
+  "GSPWebApiConfigurations": [
+    {
+      "Application": "runtime",
+      "ServiceUnit": "communication",
+      "Assembly": "Inspur.Ecp.Caf.Communication.Service",
+      "Controllers": [
+        {
+          "ServiceName": "Inspur.Ecp.Caf.Communication.Service.Controllers.RpcController",
+          "Path": "/rpc",
+          "Type": "Inspur.Ecp.Caf.Communication.Service.Controllers.RpcController",
+          "Version": "1.0"
+        }
+      ]
+    }
+  ] 
+}

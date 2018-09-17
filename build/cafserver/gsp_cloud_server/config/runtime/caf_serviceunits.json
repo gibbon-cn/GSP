@@ -1,0 +1,49 @@
+{
+	"DeploymentConfiguration" :
+	{
+	  "IsDev": true,
+	  "DeployMode": "OnPremise",
+	  "AppType": "Monolithic",
+	  "IP": "127.0.0.1",
+	  "Port":"5000",
+	  "ServiceUnits":
+	  [
+		{
+	  		"Name":"scm",
+	  		"Enabled":true,
+	  		"FileName":"",
+	  	},
+		{
+	  		"Name":"eventbus",
+	  		"Enabled":true,
+	  		"FileName":"",
+	  	},
+	  	{
+	  		"Name":"bef",
+	  		"Enabled":true,
+	  		"FileName":"",
+	  	},
+	  	{
+	  		"Name":"dip",
+	  		"Enabled":true,
+	  		"FileName":"",
+	  	},
+
+		{
+	  		"Name":"sys",
+	  		"Enabled":true,
+	  		"FileName":"",
+	  	},
+		{
+	  		"Name":"cmp",
+	  		"Enabled":true,
+	  		"FileName":"",
+	  	},
+		{
+	  		"Name":"eventbus",
+	  		"Enabled":true,
+	  		"FileName":"",
+	  	}
+	  ]
+	}
+}

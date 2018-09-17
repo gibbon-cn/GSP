@@ -1,0 +1,9 @@
+{
+  "Services": [
+    {
+      "Interface": "Inspur.Ecp.Caf.Logging.IGSPLogService,Inspur.Ecp.Caf.Logging",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.Logging.GSPLogService,Inspur.Ecp.Caf.Logging"
+    }
+  ]
+}
