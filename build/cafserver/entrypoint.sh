@@ -1,0 +1,1 @@
+dotnet Inspur.Ecp.Caf.Communication.Service.dll
