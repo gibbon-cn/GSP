@@ -1,9 +1,10 @@
-FROM gibbonnet/gsp2
+FROM localhost:5000/gsp/cloud_base_ws:0.0.1
 
 WORKDIR /home/gsp
 COPY gsp_cloud_server /home/gsp/gsp_cloud_server
 EXPOSE 5000
 
-COPY ["entrypoint.sh","/home/gsp/entrypoint.sh"]
-RUN sudo chmod 777 /home/gsp/entrypoint.sh
-# ENTRYPOINT ["/home/gsp/entrypoint.sh"]
+WORKDIR /home/caf
+
+WORKDIR /home/gsp/gsp_cloud_server/runtime/libs
+ENTRYPOINT ["dotnet", "Inspur.Ecp.Caf.Communication.Service.dll"]
