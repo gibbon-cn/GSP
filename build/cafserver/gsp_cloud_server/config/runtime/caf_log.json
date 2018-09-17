@@ -1,0 +1,98 @@
+﻿
+{
+    "GSPLogProviders": [
+        {
+            "Name": "ConsoleProvider",
+            "Type": "Inspur.Ecp.Caf.Logging;Inspur.Ecp.Caf.Logging.ConsoleLoggerProvider"
+        },
+        {
+            "Name": "FileProvider",
+            "Type": "Inspur.Ecp.Caf.Logging;Inspur.Ecp.Caf.Logging.FileLoggerProvider",
+            "MaxBackupFileNum": -1,
+            // "MaxFileSize": "50MB",
+            "LockingModel": "ExclusiveLock" //MinimalLock/ExclusiveLock/InterProcessLock
+        }
+    ],
+    "GSPLoggers": [
+        {
+            "Name": "GSPDefaultLogger",
+            "PreTags": "GSPDefaultLogger",
+            "Level": "DEBUG",
+            "ProviderNames": "ConsoleProvider,FileProvider",
+            "FileName": "gsp_log",
+            "RollingStyle":"Date"  //Size/Date/Composite
+        },
+        {
+            "Name": "Communication",
+            "PreTags": "CommunicationTag,Caf",
+            "Level": "INFO",
+            "ProviderNames": "ConsoleProvider,FileProvider",
+            "FileName": "communication",
+            "RollingStyle":"Composite",  //Size/Date/Composite
+            "MaxFileSize": "50"     //单位是MB
+        },
+        {
+            "Name": "CommunicationGenerator",
+            "PreTags": "CommunicationTag,Caf,Generator",
+            "Level": "INFO",
+            "ProviderNames": "FileProvider",
+            "FileName": "dllgenerate",
+            "RollingStyle":"Size",  //Size/Date/Composite
+            "MaxFileSize": "50"
+        },
+        {
+            "Name": "CommunicationUrl",
+            "PreTags": "CommunicationTag,Caf,Url",
+            "Level": "INFO",
+            "ProviderNames": "ConsoleProvider",
+            "FileName": "webapi",
+            "RollingStyle":"Composite",  //Size/Date/Composite
+            "MaxFileSize": "50"
+        },
+        {
+            "Name": "Exception",
+            "PreTags": "ExceptionTag,Caf",
+            "Level": "INFO",
+            "ProviderNames": "ConsoleProvider,FileProvider",
+            "FileName": "exception",
+            "RollingStyle":"Composite",  //Size/Date/Composite
+            "MaxFileSize": "50"
+        },
+	{
+            "Name": "Transaction",
+            "PreTags": "Transaction,Caf",
+            "Level": "INFO",
+            "ProviderNames": "ConsoleProvider,FileProvider",
+            "FileName": "transaction",
+            "RollingStyle":"Composite",  //Size/Date/Composite
+            "MaxFileSize": "50"
+        },
+        {
+            "Name": "AssemblyExtension",
+            "PreTags": "ExceptionTag,Caf",
+            "Level": "INFO",
+            "ProviderNames": "FileProvider",
+            "FileName": "assemblyload",
+            "RollingStyle":"Size",  //Size/Date/Composite
+            "MaxFileSize": "50"
+        },
+        {
+            "Name": "GSPBefLogger",
+            "PreTags": "",
+            "Level": "DEBUG",
+            "ProviderNames": "ConsoleProvider,FileProvider",
+            "FileName": "beflog",
+            "RollingStyle":"Composite",  //Size/Date/Composite
+            "MaxFileSize": "50"
+        },
+		    {
+            "Name": "GSPSgLogger",
+			      "PreTags": "",
+            "Level": "DEBUG",
+            "ProviderNames": "ConsoleProvider,FileProvider",
+            "FileName": "sgflog",
+            "RollingStyle":"Composite",  //Size/Date/Composite
+            "MaxFileSize": "50"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+
+{
+    "ServiceUnitUrl" :
+    {
+        "Communication" : "http://localhost:5000",
+        "sys" : "http://localhost:5000",
+	 "aifdemoscminvoice": "http://localhost:5000",
+        "aifdemoscmsalesorder": "http://localhost:5000"
+    }
+}

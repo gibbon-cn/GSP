@@ -1,0 +1,35 @@
+{
+  "Services": [
+    
+	{
+      "Interface": "Inspur.Ecp.Caf.Tenancy.Api.ITenantService,Inspur.Ecp.Caf.Tenancy.Api",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.Tenancy.Core.TenantService,Inspur.Ecp.Caf.Tenancy.Core"
+    },
+	{
+      "Interface": "Inspur.Ecp.Caf.Tenancy.Api.ITenantManager,Inspur.Ecp.Caf.Tenancy.Api",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.Tenancy.Core.TenantInfoManager,Inspur.Ecp.Caf.Tenancy.Core"
+    },
+	{
+      "Interface": "Inspur.Ecp.Caf.Tenancy.Api.ITenantUtils,Inspur.Ecp.Caf.Tenancy.Api",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.Tenancy.Core.TenantUtils,Inspur.Ecp.Caf.Tenancy.Core"
+    },
+    {
+      "Interface": "Inspur.Ecp.Caf.Tenancy.Api.ITenantDbFactory,Inspur.Ecp.Caf.Tenancy.Api",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.Tenancy.Core.TenantDbFactory,Inspur.Ecp.Caf.Tenancy.Core"
+    },
+	{
+      "Interface": "Inspur.Ecp.Caf.Tenancy.Infrastructure.ITenantAccessor`1[[Inspur.Ecp.Caf.Tenancy.Core.Tenant, Inspur.Ecp.Caf.Tenancy.Core]],Inspur.Ecp.Caf.Tenancy.Infrastructure",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.Tenancy.Core.TenantAccessor,Inspur.Ecp.Caf.Tenancy.Core"
+    },
+	{
+      "Interface": "Inspur.Ecp.Caf.Tenancy.Api.ITenantAppInstanceMgr,Inspur.Ecp.Caf.Tenancy.Api",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.Tenancy.Core.TenantAppInstanceMgr,Inspur.Ecp.Caf.Tenancy.Core"
+    }
+  ]
+}

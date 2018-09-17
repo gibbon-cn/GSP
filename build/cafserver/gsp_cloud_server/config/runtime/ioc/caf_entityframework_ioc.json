@@ -1,0 +1,66 @@
+{
+  "Services": [
+    
+	{
+      "Interface": "Inspur.Ecp.Caf.EntityFramework.Api.IDbContextFinder,Inspur.Ecp.Caf.EntityFramework.Api",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.EntityFramework.EFAdaptor.DbContextFinder,Inspur.Ecp.Caf.EntityFramework.EFAdaptor"
+    },
+	{
+      "Interface": "Inspur.Ecp.Caf.EntityFramework.Api.ITableManager,Inspur.Ecp.Caf.EntityFramework.Api",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.EntityFramework.EFAdaptor.TableManager,Inspur.Ecp.Caf.EntityFramework.EFAdaptor"
+    },
+	{
+      "Interface": "Inspur.Ecp.Caf.EntityFramework.EFAdaptor.IDbContextResolver,Inspur.Ecp.Caf.EntityFramework.EFAdaptor",
+      "Lifetime": "Per-Dependency",
+      "Implemention": "Inspur.Ecp.Caf.EntityFramework.EFAdaptor.DefaultDbContextResolver,Inspur.Ecp.Caf.EntityFramework.EFAdaptor"
+    },
+	{
+      "Interface": "Inspur.Ecp.Caf.EntityFramework.EFAdaptor.IDbContextOptionsBuilderCreator,Inspur.Ecp.Caf.EntityFramework.EFAdaptor",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.EntityFramework.EFAdaptor.DbContextOptionsBuilderCreator,Inspur.Ecp.Caf.EntityFramework.EFAdaptor"
+    },
+	{
+      "Interface": "Inspur.Ecp.Caf.EntityFramework.Api.ICurrentUnitOfWorkProvider,Inspur.Ecp.Caf.EntityFramework.Api",
+      "Lifetime": "Per-Dependency",
+      "Implemention": "Inspur.Ecp.Caf.EntityFramework.EFAdaptor.AsyncLocalCurrentUnitOfWorkProvider,Inspur.Ecp.Caf.EntityFramework.EFAdaptor"
+    },
+	{
+      "Interface": "Inspur.Ecp.Caf.EntityFramework.EFAdaptor.ITransactionStrategy,Inspur.Ecp.Caf.EntityFramework.EFAdaptor",
+      "Lifetime": "Per-Dependency",
+      "Implemention": "Inspur.Ecp.Caf.EntityFramework.EFAdaptor.DbContextEfCoreTransactionStrategy,Inspur.Ecp.Caf.EntityFramework.EFAdaptor"
+    },
+	{
+      "Interface": "Inspur.Ecp.Caf.EntityFramework.EFAdaptor.IDbContextProvider,Inspur.Ecp.Caf.EntityFramework.EFAdaptor",
+      "Lifetime": "Per-Dependency",
+      "Implemention": "Inspur.Ecp.Caf.EntityFramework.EFAdaptor.UnitOfWorkDbContextProvider,Inspur.Ecp.Caf.EntityFramework.EFAdaptor"
+    },
+	{
+      "Interface": "Inspur.Ecp.Caf.EntityFramework.Api.IUnitOfWork,Inspur.Ecp.Caf.EntityFramework.Api",
+      "Lifetime": "Per-Dependency",
+      "Implemention": "Inspur.Ecp.Caf.EntityFramework.EFAdaptor.EFUnitOfWork,Inspur.Ecp.Caf.EntityFramework.EFAdaptor"
+    },
+	{
+      "Interface": "Inspur.Ecp.Caf.EntityFramework.Api.IUnitOfWorkDefaultOptions,Inspur.Ecp.Caf.EntityFramework.Api",
+      "Lifetime": "Per-Dependency",
+      "Implemention": "Inspur.Ecp.Caf.EntityFramework.Api.UnitOfWorkDefaultOptions,Inspur.Ecp.Caf.EntityFramework.Api"
+    },
+	{
+      "Interface": "Inspur.Ecp.Caf.EntityFramework.Api.IUnitOfWorkManager,Inspur.Ecp.Caf.EntityFramework.Api",
+      "Lifetime": "Per-Dependency",
+      "Implemention": "Inspur.Ecp.Caf.EntityFramework.Api.UnitOfWorkManager,Inspur.Ecp.Caf.EntityFramework.Api"
+    },
+	{
+      "Interface": "Inspur.Ecp.Caf.EntityFramework.Api.IQueryOption,Inspur.Ecp.Caf.EntityFramework.Api",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.EntityFramework.EFAdaptor.QueryOption,Inspur.Ecp.Caf.EntityFramework.EFAdaptor"
+    },
+	{
+      "Interface": "Inspur.Ecp.Caf.EntityFramework.Api.IRepositoryOnSql,Inspur.Ecp.Caf.EntityFramework.Api",
+      "Lifetime": "Per-Dependency",
+      "Implemention": "Inspur.Ecp.Caf.EntityFramework.Api.RepositoryOnSql,Inspur.Ecp.Caf.EntityFramework.Api"
+    }
+			
+  ]
+}

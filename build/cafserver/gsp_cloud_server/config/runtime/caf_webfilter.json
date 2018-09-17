@@ -1,0 +1,211 @@
+
+{
+    "RequestFilter":
+    {
+        "Enable": false, //是否启用，优先级 LegalFiles>AllowedPaths>FileExtensions
+        "LegalFiles": ["/index.html", "/index.htm"], //例外的文件 ，相对根路径
+        "AllowedPaths": [""], //例外的路径，相对根来说，比如gsp-cloud/bin/web,填写/bin/web,多个通过逗号分隔
+
+        "AllowUnlistedFileExtension": true, //未列出的扩展名是否允许
+        "FileExtensions": [//禁止或者允许的名单列表，如果是黑名单，需要将AllowUnlistedFileExtension置为true，如果是白名单，需要将AllowUnlistedFileExtension置为false
+            //黑名单
+            {
+                "FileExtension": "asa",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "asax",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "ascx",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "master",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "skin",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "browser",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "sitemap",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "config",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "cs",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "csproj",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "vb",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "vbproj",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "webinfo",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "licx",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "resx",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "resources",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "mdb",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "vjsproj",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "java",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "jsl",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "ldb",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "dsdgm",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "ssdgm",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "lsad",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "ssmap",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "cd",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "dsprototype",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "lsaprototype",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "sdm",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "sdmDocument",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "mdf",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "ldf",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "ad",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "dd",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "ldd",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "sd",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "adprototype",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "lddprototype",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "exclude",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "refresh",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "compiled",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "msgx",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "vsdisco",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "rules",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "json",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "dll",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "pdb",
+                "Allowed": "false"
+            },
+            {
+                "FileExtension": "xml",
+                "Allowed": "false"
+            },
+            //白名单
+            {
+                "FileExtension": "html",
+                "Allowed": "true"
+            }
+        ]
+    }
+}

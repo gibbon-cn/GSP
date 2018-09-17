@@ -1,0 +1,48 @@
+
+{
+    "MainEventConfiguration" :
+    {
+        "EventListenerConfigurations" : [
+            
+        ]
+    },
+    "MiddlewareEventConfiguration" :
+    {
+        "EventListenerConfigurations" : [
+        ]
+    },
+
+    "ConfigureServiceEventConfiguration" :
+    {
+        "EventListenerConfigurations" : [
+        ]
+    },
+    "ConfigEventConfiguration" :
+    {
+        "EventListenerConfigurations" : [
+        ]
+    },
+    "ControllerEventConfiguration" :
+    {
+        "EventListenerConfigurations" : [
+            {
+               "Code" : "UTCTimeConverter",
+               "ListenerName" : "UTCTimeConverter",
+               "AssemblyName" : "Inspur.Ecp.Caf.I18nFramework.LocalClient",
+               "ImplClassName" : "Inspur.Ecp.Caf.I18nFramework.LocalClient.UTCTimeConvertListener",
+               "EventManagerCode" : "UTCTimeConverter",
+               "Name" : "UTCTimeConverter"
+            }
+        ]
+    },
+    "CtorControllerEventConfiguration" :
+    {
+        "EventListenerConfigurations" : [
+        ]
+    },
+    "RpcEventConfiguration" :
+    {
+        "EventListenerConfigurations" : [
+        ]
+    }
+}

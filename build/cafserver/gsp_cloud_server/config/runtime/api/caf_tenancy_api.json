@@ -1,0 +1,28 @@
+﻿/*
+  配置文件的路径
+  Glbal
+    -WebApi
+      -GSP
+        -CafWebApi.json
+        -SysWebApi.json
+        -....
+      -BI
+      -FI
+*/
+{
+  "GSPWebApiConfigurations": [
+    {
+      "Application": "runtime",
+      "ServiceUnit": "tenancy",
+      "Assembly": "Inspur.Ecp.Caf.Tenancy.Service",
+      "Controllers": [
+        {
+          "ServiceName": "tenantService",
+          "Path": "/tenant",
+          "Type": "Inspur.Ecp.Caf.Tenancy.Service.TenantServiceController",
+          "Version": "1.0"
+        }
+      ]
+    }
+  ] 
+}

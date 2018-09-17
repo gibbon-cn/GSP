@@ -1,0 +1,54 @@
+{
+  "Services": [
+	{
+      "Interface": "Inspur.Ecp.Caf.I18nFramework.Api.ILanguageService,Inspur.Ecp.Caf.I18nFramework.Api",
+      "Lifetime": "Per-Dependency",
+      "Implemention": "Inspur.Ecp.Caf.I18nFramework.LocalClient.LanguageService,Inspur.Ecp.Caf.I18nFramework.LocalClient"
+    },
+    {
+      "Interface": "Inspur.Ecp.Caf.I18nFramework.Api.IRegionManager,Inspur.Ecp.Caf.I18nFramework.Api",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.I18nFramework.LocalClient.RegionManager,Inspur.Ecp.Caf.I18nFramework.LocalClient"
+    },
+    {
+      "Interface": "Inspur.Ecp.Caf.I18nFramework.Api.IDataFormatManager,Inspur.Ecp.Caf.I18nFramework.Api",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.I18nFramework.LocalClient.DataFormatManager,Inspur.Ecp.Caf.I18nFramework.LocalClient"
+    },
+    {
+      "Interface": "Inspur.Ecp.Caf.I18nFramework.Api.IResourceLocalizer,Inspur.Ecp.Caf.I18nFramework.Api",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.I18nFramework.LocalClient.I18NResourceLocalizer,Inspur.Ecp.Caf.I18nFramework.LocalClient"
+    },
+	{
+      "Interface": "Inspur.Ecp.Caf.Transactions.IVirtualTransDbBuilder,Inspur.Ecp.Caf.Transactions",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.Transactions.VirtualExtension.VirtualTransDatabaseBuilder, Inspur.Ecp.Caf.Transactions.VirtualExtension"
+    },
+    {
+      "Interface": "Inspur.Ecp.Caf.I18nFramework.Api.I18nContext,Inspur.Ecp.Caf.I18nFramework.Api",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.I18nFramework.LocalClient.I18nServerContext,Inspur.Ecp.Caf.I18nFramework.LocalClient"
+    },
+    {
+      "Interface": "Inspur.Ecp.Caf.I18nFramework.Api.ITimeZoneInfoService,Inspur.Ecp.Caf.I18nFramework.Api",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.I18nFramework.LocalClient.TimeZoneInfoService,Inspur.Ecp.Caf.I18nFramework.LocalClient"
+    },
+    {
+      "Interface": "Inspur.Ecp.Caf.I18nFramework.Api.ICultureInfoBuilder,Inspur.Ecp.Caf.I18nFramework.Api",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.I18nFramework.LocalClient.CultureInfoBuilder,Inspur.Ecp.Caf.I18nFramework.LocalClient"
+    },
+    {
+      "Interface": "Inspur.Ecp.Caf.I18nFramework.Api.II18NUserSettingService,Inspur.Ecp.Caf.I18nFramework.Api",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.I18nFramework.LocalClient.I18NUserSettingService,Inspur.Ecp.Caf.I18nFramework.LocalClient"
+    },
+    {
+      "Interface": "Inspur.Ecp.Caf.I18nFramework.Api.IDefaultLanguageManager,Inspur.Ecp.Caf.I18nFramework.Api",
+      "Lifetime": "SINGLE-INSTANCE",
+      "Implemention": "Inspur.Ecp.Caf.I18nFramework.LocalClient.DefaultLanguageManager,Inspur.Ecp.Caf.I18nFramework.LocalClient"
+    }
+  ]
+}

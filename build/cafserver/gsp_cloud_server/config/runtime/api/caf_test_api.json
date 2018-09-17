@@ -1,0 +1,28 @@
+﻿/*
+  配置文件的路径
+  Glbal
+    -WebApi
+      -GSP
+        -CafWebApi.json
+        -SysWebApi.json
+        -....
+      -BI
+      -FI
+*/
+{
+  "GSPWebApiConfigurations": [
+    {
+      "Application": "GSP",
+      "ServiceUnit": "Communication",
+      "Assembly": "Inspur.Ecp.Caf.Communication.Service",
+      "Controllers": [
+        {
+          "ServiceName": "Inspur.Ecp.Caf.Communication.Service.Controllers.TestController",
+          "Path": "/Test",
+          "Type": "Inspur.Ecp.Caf.Communication.Service.Controllers.TestController",
+          "Version": "1.0"
+        }
+      ]
+    }
+  ] 
+}

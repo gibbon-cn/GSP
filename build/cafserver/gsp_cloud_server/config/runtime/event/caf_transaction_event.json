@@ -1,0 +1,15 @@
+{
+    "TransactionLogConfig" :
+    {
+        "EventListenerConfigurations" : [
+          {
+             "Code" : "transactionLog",
+             "ListenerName" : "transactionLog",
+             "AssemblyName" : "Inspur.Ecp.Caf.Transactions.Log",
+             "ImplClassName" : "Inspur.Ecp.Caf.Transactions.Log.GSPTransactionLog",
+             "EventManagerCode" : "transactionLog",
+             "Name" : "transactionLog"
+          }            
+        ]
+    }
+}

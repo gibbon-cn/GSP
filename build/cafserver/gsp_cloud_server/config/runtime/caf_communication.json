@@ -1,0 +1,45 @@
+﻿
+{
+    "GSPCommConfiguration" :
+    {
+        "ApiUrlTemplate" : "api/{application}/{serviceUnit}/v{version}/{controller}",
+        "ServiceRegisterCfg" :
+        {
+            "RegisterServiceUrl" : "http://10.24.15.6:8761/eureka"
+        },
+        "SessionCfg" :
+        {
+            "ExpirationTime" : "20",
+            "CookieName" : "x-ecp-token"
+        }
+    },
+    "GSPCommServices" : [
+        // {
+        //    "Api": "Inspur.ECP.Rtf.Api;Inspur.ECP.Rtf.Api.IIdentityServer",
+        //    "Service": "Inspur.ECP.Rtf.Core;Inspur.ECP.Rtf.Core.Identity.InspurIdServer",
+        //    "Type": "Singleton"
+        //  }
+    ],
+    "GSPCommHealthCheck" :
+    {
+        "Enable" : "false",
+        "DatabaseName" : "MyTestDb",
+        "Host" : "http://127.0.0.1",
+        "Port" : "8086",
+        "Username" : "admin",
+        "Password" : "1234",
+        "AppName" : "GSPPPPPP",
+        "Env" : "stage11111"
+    },
+    "GSPCorsConfiguration" :
+    {
+        "EnablePolicyName" : "GSPCorsPolicy",
+        "Polices" :
+        [
+            {
+                "Name" : "GSPCorsPolicy",
+                "CorsOrigins" : "*" //http://localhost:8080,多个使用逗号分隔,*代表全部站点都允许
+            }
+        ]
+    }
+}
