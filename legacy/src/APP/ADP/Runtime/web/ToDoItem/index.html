@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Eclipse Che Server API Demo</title>
+	<link rel="stylesheet" type="text/css" href="./lib/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="./lib/easyui/themes/icon.css">
+	<script type="text/javascript" src="./lib/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="./lib/easyui/jquery.easyui.all-140.js"></script>
+	<script type="text/javascript" data-main="app.js" src="./lib/requirejs/require.js"></script>
+</head>
+<body>
+	<h2>Todo List</h2>
+	<div style="margin:20px 0;"></div>
+
+
+	<div class="easyui-layout" style="height:800px;width:1000px">
+		<div data-options="region:'center'" style="height:300px">
+			<table id = 'grid' class="easyui-datagrid" title="待办列表" style="width:100%;height:100%" data-options="singleSelect:true,collapsible:true">
+				<thead>
+					<tr>
+						<th data-options="field:'id',width:200">ID</th>
+						<th data-options="field:'name',width:80">名称</th>
+						<th data-options="field:'isComplete',width:80,align:'left'">状态</th>
+					</tr>
+				</thead>
+			</table>			
+		</div>
+	</div>	
+</body>
+</html>
