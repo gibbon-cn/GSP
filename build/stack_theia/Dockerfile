@@ -147,7 +147,7 @@ RUN apt-get update && apt-get install -y python build-essential
 USER theia
 ARG version=latest
 WORKDIR /home/theia
-ADD $version.package.json ./package.json
+ADD latest.package.json ./package.json
 ARG GITHUB_TOKEN
 RUN yarn --cache-folder ./ycache && rm -rf ./ycache
 RUN yarn theia build
